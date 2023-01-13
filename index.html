@@ -7,10 +7,32 @@
         <title>My Home Page</title>
     </head>
     <body>
-        <img src="https://www.citypng.com/public/uploads/preview/yellow-thunder-lighting-effect-transparent-png-31628689785somwo2nd6w.png" alt="Yellow Lighting">
+        <img src="https://www.citypng.com/public/uploads/preview/yellow-thunder-lighting-effect-transparent-png-31628689785somwo2nd6w.png"  alt="Yellow Lighting">
         <div class="lightning">
             <img src="https://www.citypng.com/public/uploads/preview/yellow-thunder-lighting-effect-transparent-png-31628689785somwo2nd6w.png" alt="Yellow Lighting" >
         </div>
-       
+        <video width="350" height="290" controls>
+            <source src="big_buck_bunny.mp4">
+        </video>
+        <audio controls>
+        <source src="rocket.wav" type="audio/wav">
+        </audio>
+        <canvas id ="myCanvas" style="
+        border: 2px solid black;
+        display: block;
+        margin-top: 10px;">
+        </canvas>
+        <svg width="300" height="250">
+            <rect x="50" y="50" rx="15" width="150" height="150" style="fill:green; stroke:black; stroke-width:10; opacity:70%; margin: 10px;" /> 
+        </svg>
+
     </body>
+    <script>
+        let myCan = document.getElementById('myCanvas');
+        let ctx = myCan.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(150,75);
+        ctx.lineTo(300,0)
+        ctx.stroke();
+    </script>
 </html>
